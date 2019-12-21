@@ -1,0 +1,63 @@
+/* ============================================ */
+/* Standard Settings ========================== */
+/* ============================================ */
+#appWrapper { /* "Wraps" the App Component */
+  background: var(--nav-background);
+  min-height: 100vh;
+  min-width: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+#appLeftBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid black;
+}
+  #navContainer { /* "Contains" the imported Navigation Component */
+    min-height: 100%;
+    background-color: var(--nav-background);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+#appRightBox{
+  flex: 6;
+}
+  #bodyContainer { /* "Contains" the imported Body Component */
+    height: 100%;
+    width: 100%;
+  }
+
+/* ============================================ */
+/* 300 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 300px) {};
+
+/* ============================================ */
+/* 500 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 500px) {};
+
+/* ============================================ */
+/* 700 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 700px) {};
+
+/* ============================================ */
+/* 1000 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1000px) {};
+
+/* ============================================ */
+/* 1400 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1400px) {};
+
+/* ============================================ */
+/* 1900 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1900px) {};

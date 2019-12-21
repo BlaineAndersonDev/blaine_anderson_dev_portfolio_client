@@ -1,0 +1,27 @@
+*, body {
+  font-family: "eurostile",sans-serif, Georgia, serif, "Times New Roman", Times, serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 0.35s ease-in-out;
+}
+:root {
+  --nav-background:#3B4844;
+  --nav-text:#E6ECF8;
+
+  --01-background:#E6ECF8;
+  --01-icons-subtitles:#cbba22;
+  --01-text-titles:#000000;
+  --01-borders:#9d9d9d;
+
+  --02-background:#FCE625; /* Light/Bright color */
+  --02-button-hover:#cbba22; /* Med color */
+  --02-hover-background:#2b2805; /* Dark, almost black color */
+  --02-text-icons-subtitles:#000000;
+  --02-alternate-color:#E6ECF8;
+  --02-borders:#E6ECF8;
+
+  --success:#63ac4b;
+  --warning:#e19c13;
+  --danger:#f44336;
+}

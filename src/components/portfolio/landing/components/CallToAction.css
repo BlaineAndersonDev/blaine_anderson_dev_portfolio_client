@@ -1,0 +1,113 @@
+/* ============================================ */
+/* Standard Settings ========================== */
+/* ============================================ */
+#callWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-width: 100%;
+  background-color: var(--02-hover-background);
+}
+#callBoxContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-width: 100%;
+}
+.callBox{
+  flex: 0 1 calc(30% - 50px);
+  margin-left: 25px;
+  margin-right: 25px;
+  color: var(--02-alternate-color);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#callFirstBox{
+  justify-content: flex-start;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+}
+#callSecondBox{
+  justify-content: center;
+  font-size: 1em;
+  font-weight: normal;
+}
+#callThirdBox{
+  justify-content: flex-end;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.callButton{
+  width: 100%;
+  color: var(--02-alternate-color);
+  border: 2px solid var(--02-button-hover);
+  background: none;
+  border-radius: 50px;
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 0.8em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px black;
+}
+.callButton:hover, .callButton:focus{
+  color: var(--02-alternate-color);
+  background: var(--02-button-hover);
+}
+
+/* ============================================ */
+/* 300 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 300px) {
+  #callBoxContainer{
+    flex-direction: column;
+  }
+  .callBox{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #callSecondBox{
+    font-size: 1.3em;
+  }
+  .callButton{
+    padding: 20px;
+  }
+};
+
+/* ============================================ */
+/* 500 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 500px) {};
+
+/* ============================================ */
+/* 700 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 700px) {};
+
+/* ============================================ */
+/* 1000 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1000px) {};
+
+/* ============================================ */
+/* 1400 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1400px) {};
+
+/* ============================================ */
+/* 1900 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1900px) {};

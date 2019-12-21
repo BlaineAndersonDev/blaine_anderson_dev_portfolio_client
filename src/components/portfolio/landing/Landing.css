@@ -1,0 +1,59 @@
+/* ============================================ */
+/* Standard Settings ========================== */
+/* ============================================ */
+#landingWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: top;
+  align-items: flex-start;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.landingBox{
+  flex: 1;
+  width: 100%;
+}
+#landingTopBox{
+  border-bottom: 2px solid black;
+  min-height: 800px;
+  background-image: url('/images/coffee_laptop_01.jpg');
+  background-attachment: fixed; /* Keeps the image in place to create parallax. */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#landingMidBox{
+}
+#landingBotBox{}
+
+/* ============================================ */
+/* 300 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 300px) {};
+
+/* ============================================ */
+/* 500 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 500px) {};
+
+/* ============================================ */
+/* 700 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 700px) {};
+
+/* ============================================ */
+/* 1000 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1000px) {};
+
+/* ============================================ */
+/* 1400 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1400px) {};
+
+/* ============================================ */
+/* 1900 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1900px) {};

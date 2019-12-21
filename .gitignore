@@ -1,0 +1,15 @@
+# =============================================
+# ================ Server Files ===============
+# =============================================
+# Dependency directories
+node_modules/
+package-lock.json
+build
+
+# SSH Keys & Local Secrets
+blaineAndersonDev
+blaineAndersonDev.pub
+blaineAndersonDevClientSecrets
+
+# Other
+.DS_Store

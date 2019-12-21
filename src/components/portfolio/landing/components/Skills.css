@@ -1,0 +1,160 @@
+/* ============================================ */
+/* Standard Settings ========================== */
+/* ============================================ */
+#skillsWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100%;
+  min-width: 100%; */
+  background-color: var(--01-background);
+}
+#skillsContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 50px;
+  /* min-height: 100%;
+  min-width: 100%;
+  margin-bottom: 50px; */
+}
+/* .skillsBoxFirst{
+  border-left: 1px solid var(--01-borders);
+}
+.skillsBoxSecond{
+  border-left: 1px solid var(--01-borders);
+  border-right: 1px solid var(--01-borders);
+}
+.skillsBoxThird{
+  border-right: 1px solid var(--01-borders);
+} */
+.skillsBox{
+  flex: 0 1 calc(30% - 20px;);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 300px;
+}
+  .skillsBoxSection{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .skillsBoxSectionCenter{
+    justify-content: center;
+    align-items: center;
+  }
+    .skillIcon{
+      height: 75px;
+      width: 75px;
+    }
+    .skillTitle{
+      width: 100%;
+      padding-top: 20px;
+      font-size: 1.2em;
+      color: var(--01-text-titles);
+      font-weight: bold;
+      text-shadow: 0.5px 0.5px 1px var(--01-borders);
+    }
+    .skillSubTitle{
+      width: 100%;
+      padding-top: 20px;
+      font-size: 1.2em;
+      color: var(--01-icons-subtitles);
+      font-weight: bold;
+    }
+    .skillDesc{
+      width: 100%;
+      padding-top: 20px;
+      font-size: 1em;
+      color: var(--01-text-titles);
+      font-weight: 300;
+    }
+    .skillList{
+      width: 100%;
+      font-size: 1em;
+      color: var(--01-text-titles);
+      font-weight: 300;
+      list-style: none;
+      margin: 5px;
+    }
+    .skillListItem{
+      width: 100%;
+      font-size: 1em;
+      color: var(--01-text-titles);
+      font-weight: 300;
+      margin: 2px;
+    }
+
+/* ============================================ */
+/* 300 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 300px) {
+  #skillsContainer{
+    flex-flow: column wrap;
+  }
+  .skillsBox{
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .skillsBoxSection{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .skillsBoxFirst{
+    border-top: 1px solid var(--01-borders);
+  }
+  .skillsBoxSecond{
+    border-top: 1px solid var(--01-borders);
+    border-bottom: 1px solid var(--01-borders);
+  }
+  .skillsBoxThird{
+    border-bottom: 1px solid var(--01-borders);
+  }
+};
+
+/* ============================================ */
+/* 500 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 500px) {};
+
+/* ============================================ */
+/* 700 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 700px) {};
+
+/* ============================================ */
+/* 1000 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1000px) {};
+
+/* ============================================ */
+/* 1400 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1400px) {};
+
+/* ============================================ */
+/* 1900 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1900px) {};
