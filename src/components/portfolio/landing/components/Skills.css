@@ -33,7 +33,7 @@
   border-right: 1px solid var(--01-borders);
 } */
 .skillsBox{
-  flex: 0 1 calc(30% - 20px;);
+  flex: 0 1 calc(30% - 20px);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
