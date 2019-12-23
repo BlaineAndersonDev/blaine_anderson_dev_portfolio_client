@@ -7,9 +7,9 @@ package-lock.json
 build
 
 # SSH Keys & Local Secrets
-blaineAndersonDevPortfolioClient
-blaineAndersonDevPortfolioClient.pub
-blaineAndersonDevPortfolioClientSecrets
+Blaine-Anderson-Dev-Portfolio-Client
+Blaine-Anderson-Dev-Portfolio-Client.pub
+Blaine-Anderson-Dev-Portfolio-Client-Secrets
 
 # Other
 .DS_Store
