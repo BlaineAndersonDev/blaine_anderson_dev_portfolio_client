@@ -13,6 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "devstart": "npm run build && serve -s build",
     "cloudstart": "pm2 kill && npm run build && pm2 serve build && pm2 monit"
   },
   "eslintConfig": {
