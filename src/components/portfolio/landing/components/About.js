@@ -11,7 +11,8 @@ class About extends Component {
         </div>
 
         <div id="aboutBotBox" className="aboutBox">
-          <p>Since beginning my journey as a freelance developer a few years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time. </p>
+          <p>A few years ago I began my journey as a freelance developer and since then I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.</p>
+          <p>I'm a confidant leader, an attentive team member, a critical thinker, and constantly striving to improve my abilities one project at a time.</p>
         </div>
 
       </div>

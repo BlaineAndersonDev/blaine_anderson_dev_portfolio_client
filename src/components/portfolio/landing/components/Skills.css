@@ -23,11 +23,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 400px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
   .skillsBoxSection{
     width: 100%;
@@ -92,6 +87,21 @@
   #skillsContainer {
     flex-flow: column wrap;
   }
+  .skillsBoxFirst{
+    border-top: solid 1px var(--01-text-titles);
+  }
+  .skillsBoxSecond{
+    border-top: solid 1px var(--01-text-titles);
+  }
+  .skillsBoxThird{
+    border-top: solid 1px var(--01-text-titles);
+    border-bottom: solid 1px var(--01-text-titles);
+  }
+  .skillsBox{
+    max-width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 /* ============================================ */
 /* 500 Width ================================== */
@@ -111,6 +121,24 @@
 @media only screen and (min-width: 1000px) {
   #skillsContainer {
     flex-flow: row nowrap;
+  }
+  .skillsBoxFirst{
+    border: none;
+  }
+  .skillsBoxSecond{
+    border: none;
+    border-right: solid 1px var(--01-text-titles);
+    border-left: solid 1px var(--01-text-titles);
+  }
+  .skillsBoxThird{
+    border: none;
+  }
+  .skillsBox{
+    flex: 0 1 calc(30% - 20px);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
