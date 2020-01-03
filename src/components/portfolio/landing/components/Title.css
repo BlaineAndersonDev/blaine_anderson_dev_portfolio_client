@@ -10,16 +10,14 @@
   height: 100%;
   width: 100%;
   color: white;
-}
-.titleBox{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
   background-color: rgba(23, 23, 23, 0.50);
 }
+.titleBox{
+  display: flex;
+  flex-flow: column nowrap;
+}
 #titleTopBox{
+  width: 80%;
   flex: 1;
   justify-content: flex-end;
   font-size: 4em;
@@ -27,6 +25,7 @@
   text-shadow: 2px 2px 4px black;
 }
 #titleMidBox{
+  width: 80%;
   flex: 1;
   justify-content: flex-start;
   font-size: 2em;
@@ -43,27 +42,46 @@
   #titleMidBox {
     font-size: 1.5em;
   }
-};
+}
+
+/* ============================================ */
+/* 500 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 500px) {
+}
 
 /* ============================================ */
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
-  #titleTopBox {
-  }
-};
+}
 
 /* ============================================ */
 /* 1000 Width ================================= */
 /* ============================================ */
-@media all and (min-width: 1000px) {};
+@media all and (min-width: 1000px) {
+}
+
+/* ============================================ */
+/* 1200 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1200px) {
+  #titleTopBox {
+    font-size: 3.5em;
+  }
+  #titleMidBox {
+    font-size: 2.5em;
+  }
+}
 
 /* ============================================ */
 /* 1400 Width ================================= */
 /* ============================================ */
-@media all and (min-width: 1400px) {};
+@media all and (min-width: 1400px) {
+}
 
 /* ============================================ */
 /* 1900 Width ================================= */
 /* ============================================ */
-@media all and (min-width: 1900px) {};
+@media all and (min-width: 1900px) {
+}

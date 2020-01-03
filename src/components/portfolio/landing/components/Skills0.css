@@ -3,9 +3,10 @@
 /* ============================================ */
 #skillsWrapper {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  /* min-height: 100%;
+  min-width: 100%; */
   background-color: var(--01-background);
 }
 #skillsContainer{
@@ -13,25 +14,39 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   margin-top: 50px;
+  /* min-height: 100%;
+  min-width: 100%;
+  margin-bottom: 50px; */
 }
+/* .skillsBoxFirst{
+  border-left: 1px solid var(--01-borders);
+}
+.skillsBoxSecond{
+  border-left: 1px solid var(--01-borders);
+  border-right: 1px solid var(--01-borders);
+}
+.skillsBoxThird{
+  border-right: 1px solid var(--01-borders);
+} */
 .skillsBox{
+  flex: 0 1 calc(30% - 20px);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 400px;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 10px;
   padding-right: 10px;
+  max-width: 300px;
 }
   .skillsBoxSection{
     width: 100%;
-    height: auto;
+    height: 150px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -89,37 +104,61 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media only screen and (min-width: 300px) {
-  #skillsContainer {
-    flex-flow: column wrap;
+  #skillsContainer{
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
-}
+  .skillsBox{
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .skillsBoxSection{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .skillsBoxFirst{
+    border-top: 1px solid var(--01-borders);
+  }
+  .skillsBoxSecond{
+    border-top: 1px solid var(--01-borders);
+    border-bottom: 1px solid var(--01-borders);
+  }
+  .skillsBoxThird{
+    border-bottom: 1px solid var(--01-borders);
+  }
+};
+
 /* ============================================ */
 /* 500 Width ================================== */
 /* ============================================ */
 @media only screen and (min-width: 500px) {
-}
+  #skillsContainer{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+};
 
 /* ============================================ */
 /* 700 Width ================================== */
 /* ============================================ */
-@media only screen and (min-width: 700px) {
-}
+/* @media all and (min-width: 700px) {}; */
 
 /* ============================================ */
 /* 1000 Width ================================= */
 /* ============================================ */
-@media only screen and (min-width: 1000px) {
-  #skillsContainer {
-    flex-flow: row nowrap;
-  }
-}
+/* @media all and (min-width: 1000px) {}; */
 
 /* ============================================ */
 /* 1400 Width ================================= */
 /* ============================================ */
-@media only screen and (min-width: 1400px) {}
+/* @media all and (min-width: 1400px) {}; */
 
 /* ============================================ */
 /* 1900 Width ================================= */
 /* ============================================ */
-@media only screen and (min-width: 1900px) {}
+/* @media all and (min-width: 1900px) {}; */
