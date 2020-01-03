@@ -26,7 +26,7 @@ class Projects extends Component {
             <div className="projectOverlay">
               <p className="projectName">GrateDate</p>
               <p className="projectText">GrateDate is an iOS app that helps its users make the best choices in thier dating life based on their data and input from previous dating experiences.</p>
-              <a className="projectButton" href="https://ratethedate.app/" target="_blank" rel="noopener noreferrer">
+              <a className="projectButton" href="https://gratedate.app/" target="_blank" rel="noopener noreferrer">
                 Visit Website
               </a>
             </div>
