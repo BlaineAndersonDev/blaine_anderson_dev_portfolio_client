@@ -15,15 +15,15 @@ class Nav extends Component {
 
           <div id="navMidBox" className="navBox">
             <h3 className="navSectionTitle">Demos</h3>
-            <p className="navLink">API</p>
+            <a className="navLink" href="/" rel="noopener noreferrer"> Portfolio </a>
+            <a className="navLink" href="/api" rel="noopener noreferrer"> API </a>
             <p className="navLink">Database</p>
           </div>
 
           <div id="navBotBox" className="navBox">
 
             <a className="navButton" href="https://www.linkedin.com/in/blaineandersondev/"
-            target="_blank"
-            rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer">
               <img src="/images/iconLinkedin.png" alt="iconLinkedin" className="navSocialIcon" />
               <p className="navSocialText">LinkedIn</p>
             </a>

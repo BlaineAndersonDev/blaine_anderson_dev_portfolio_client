@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css';
 import Nav from './Nav.js';
 import Landing from './portfolio/landing/Landing.js';
+import Api from './api/Api.js';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           <div id="appRightBox">
             <div id="bodyContainer">
               <Route exact path='/' component={Landing}/>
+              <Route exact path='/api' component={Api}/>
             </div>
           </div>
 
