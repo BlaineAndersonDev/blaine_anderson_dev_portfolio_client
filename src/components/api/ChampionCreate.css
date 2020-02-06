@@ -1,0 +1,72 @@
+/* ============================================ */
+/* Standard Settings ========================== */
+/* ============================================ */
+#champCreateWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: lightgreen;
+}
+  #champCreateTitle{
+    margin: 20px;
+    width: 100%;
+  }
+  #champCreateList{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+    .champCreateBox{
+      width: 150px;
+      margin: 10px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+      .champImage{
+        width: 100px;
+        height: 100px;
+      }
+/* ============================================ */
+/* 300 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 300px) {
+}
+
+/* ============================================ */
+/* 500 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 500px) {
+}
+
+/* ============================================ */
+/* 700 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 700px) {
+}
+
+/* ============================================ */
+/* 1000 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1000px) {
+}
+
+/* ============================================ */
+/* 1400 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1400px) {
+}
+
+/* ============================================ */
+/* 1900 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1900px) {
+}

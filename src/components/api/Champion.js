@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import './Champion.css';
+import superagent from 'superagent'
 import ChampionList from './ChampionList.js';
+import ChampionCreate from './ChampionCreate.js';
 
 class Champion extends Component {
   state = {
@@ -16,9 +17,30 @@ class Champion extends Component {
   // Retrieves all Champions from hosted server.
   getChampions = () => {
     // axios.get(`http://159.65.105.25:5001/api/champions`)
-    axios.get(`http://localhost:5001/api/champions`)
+    superagent.get(`http://localhost:5001/api/champions`)
+    .catch(err => {
+      console.warn(err);
+    })
+    .then(res => {
+      this.setState({ champions: res.body.results });
+    })
+  };
+
+  createChampion = (champion) => {
+    superagent.post('http://localhost:5001/api/champions')
+      .set('Content-Type', 'application/json')
+      .send({
+        name: champion.name,
+        gold: champion.gold,
+        class: champion.class,
+        image: champion.image
+      })
+      .catch(err => {
+        console.warn(err);
+      })
       .then(res => {
-        this.setState({ champions: res.data.results });
+        console.log('Result: ' + res)
+        this.getChampions();
       })
   };
 
@@ -27,12 +49,7 @@ class Champion extends Component {
       <div id="champWrapper">
         <ChampionList champions={this.state.champions}/>
 
-        <div id="champCreateWrapper">
-            <h3>Create a new Champion</h3>
-        </div>
-
-
-
+        <ChampionCreate createChampion={this.createChampion}/>
 
       </div>
     );
