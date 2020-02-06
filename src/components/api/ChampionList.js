@@ -3,30 +3,26 @@ import axios from 'axios';
 import './ChampionList.css';
 
 class ChampionList extends Component {
-  state = {
-    champions: []
-  }
 
   componentDidMount() {
-    axios.get(`http://159.65.105.25:5001/api/champions`)
-      .then(res => {
-        console.log()
-        const champions = res.data.results;
-        this.setState({ champions });
-      })
   }
 
   render() {
     return (
-      <div id="champListWrapper">
-            { this.state.champions.map((champion, index) =>
-              <div key={champion.champion_id} className="champListBox">
-                <li>{champion.name}</li>
-                <li>{champion.class}</li>
-                <li>${champion.gold}</li>
+      <div id="champListWrapper" className="champBox">
+        <div id="champListTitle">
+          <h3>Champions</h3>
+        </div>
+        <div id="champListList">
+            { this.props.champions.map((champion, index) =>
+              <div className="champListBox" key={champion.champion_id}>
+                <p>Name: {champion.name}</p>
+                <p>Class: {champion.class}</p>
+                <p>Gold: {champion.gold}</p>
                 <img src={champion.image} alt={champion.name} />
               </div>
             )}
+        </div>
       </div>
     );
   };

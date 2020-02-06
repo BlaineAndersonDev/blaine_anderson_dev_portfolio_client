@@ -3,21 +3,34 @@
 /* ============================================ */
 #champListWrapper {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  height: 100%;
   width: 100%;
   background-color: whitesmoke;
 }
-#champListBox{
-  width: 100%;
-  display: flex;
-
-  background: red;
-  border: red solid 1px;
-}
+  #champListTitle{
+    background-color: red;
+    width: 100%;
+  }
+  #champListList{
+    background-color: lightblue;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+    .champListBox{
+      width: 200px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
 /* ============================================ */
 /* 300 Width ================================== */
 /* ============================================ */

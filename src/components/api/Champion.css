@@ -3,21 +3,17 @@
 /* ============================================ */
 #champWrapper {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  flex-flow: column wrap;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   height: 100%;
   width: 100%;
   background-color: whitesmoke;
 }
-#champBox{
-  width: 100%;
-  display: flex;
-
-  background: red;
-  border: red solid 1px;
-}
+  #champBox{
+    height: 20%;
+  }
 /* ============================================ */
 /* 300 Width ================================== */
 /* ============================================ */
