@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
@@ -13,8 +14,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "devstart": "npm run build && serve -s build",
-    "cloudstart": "pm2 kill && npm run build && pm2 serve build && pm2 monit"
+    "devboot": "npm run build && serve -s build",
+    "cloudboot": "pm2 kill && npm run build && pm2 serve build && pm2 monit"
   },
   "eslintConfig": {
     "extends": "react-app"
