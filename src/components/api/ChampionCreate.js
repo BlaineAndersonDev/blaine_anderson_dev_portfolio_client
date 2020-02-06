@@ -15,11 +15,11 @@ class ChampionCreate extends Component {
   handleSubmit = async (event) => {
     const newChampion = {
       name: this.state.name,
+      class: this.state.class,
       gold: 5,
-      class: 'Sheperd',
       image: 'http://u.cubeupload.com/WickedAmusingbus/Spark.gif'
     }
-    await this.setState({name: ''})
+    await this.setState({name: '', class: ''})
     await this.props.createChampion(newChampion)
   }
 
@@ -29,6 +29,8 @@ class ChampionCreate extends Component {
     event.preventDefault()
     if (!this.state.name) { // State "name" is empty
       alert("The Field 'Name' is empty! Cannot create Champion.")
+    } else if (!this.state.class) { // State "name" is empty
+      alert("The Field 'Class' is empty! Cannot create Champion.")
     } else { // All fields hold values
       await this.handleSubmit()
     }
@@ -36,6 +38,9 @@ class ChampionCreate extends Component {
 
   handleNameChange = async (event) => {
     await this.setState({name: event.target.value})
+  }
+  handleClassChange = async (event) => {
+    await this.setState({class: event.target.value})
   }
 
 
@@ -51,8 +56,11 @@ class ChampionCreate extends Component {
         <div id="champCreateList">
           <form className="champCreateFieldContainer" onSubmit={this.handleEmptyFields}>
 
-            <div className="champCreateFieldTitle"> Champion Name: </div>
+            <div className="champCreateFieldTitle"> Name: </div>
             <input className="champCreateTextarea" type="text" value={this.state.name} onChange={this.handleNameChange} />
+
+            <div className="champCreateFieldTitle"> Class: </div>
+            <input className="champCreateTextarea" type="text" value={this.state.class} onChange={this.handleClassChange} />
 
             <div className="formField">
             <input className="formButton" type="submit" value="Submit" />

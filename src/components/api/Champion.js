@@ -26,6 +26,7 @@ class Champion extends Component {
     })
   };
 
+  // Create a champion, using information sent from ChampionCreate.js.
   createChampion = (champion) => {
     superagent.post('http://localhost:5001/api/champions')
       .set('Content-Type', 'application/json')
