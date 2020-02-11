@@ -1,54 +1,72 @@
 /* ============================================ */
 /* Standard Settings ========================== */
 /* ============================================ */
-#champCreateWrapper {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  background-color: lightgreen;
-}
-  #champCreateTitle{
-    margin: 20px;
-    width: 100%;
-  }
-  #champCreateList{
-    width: 100%;
+#portraitDisplay1{ display: inline; }
+#portraitDisplay2{ display: none; }
+#portraitDisplay3{ display: none; }
+#portraitDisplay4{ display: none; }
+#portraitDisplay5{ display: none; }
+#portraitDisplay6{ display: none; }
+#portraitDisplay7{ display: none; }
+#portraitDisplay8{ display: none; }
+#portraitDisplay9{ display: none; }
+#portraitDisplay10{ display: none; }
+#portraitDisplay11{ display: none; }
+#portraitDisplay12{ display: none; }
+
+  .champPortWrapper{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+    background-color: lightblue;
+    border: black solid 1px;
+    padding: 20px;
   }
-    .champCreateBox{
-      width: 150px;
-      margin: 10px;
+    #champPortTitle{
+      width: 100%;
+    }
+    #champPort{
+      width: 100%;
       display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-around;
+      flex-flow: row wrap;
+      justify-content: center;
       align-items: center;
       text-align: center;
     }
-      .champImage{
-        width: 100px;
-        height: 100px;
-      }
-.champCreateFieldContainer{
+    .champImage{
+      width: 100px;
+      height: 100px;
+      margin: 0.5em;
+    }
+.champPortButton{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  padding: 0.20em 0.8em;
+  border: 0.1em solid black;
+  margin: 0 1.0em 1.0em 0;
+  box-sizing: border-box;
+  border-radius: 2em;
+  text-decoration: none;
+  font-weight: bold;
+  color:black;
+  text-align:center;
+  transition: all 0.2s;
 }
-
-#championPortraitContainer{
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.champPortButton:hover{
+  color: white;
+  background-color:black;
+}
+@media all and (max-width:30em){
+  .champPortButton{
+  display:block;
+  margin:0.4em auto;
+  }
 }
 /* ============================================ */
 /* 300 Width ================================== */

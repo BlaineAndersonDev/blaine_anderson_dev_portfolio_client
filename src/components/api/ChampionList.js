@@ -18,7 +18,7 @@ class ChampionList extends Component {
                 <p>Name: {champion.name}</p>
                 <p>Class: {champion.class}</p>
                 <p>Gold: {champion.gold}</p>
-                <img className="champImage" src={champion.image} alt={champion.name} />
+                <img className="champImage" src={champion.square_image} alt={champion.name} />
               </div>
             )}
         </div>

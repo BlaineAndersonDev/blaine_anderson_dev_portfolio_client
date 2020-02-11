@@ -50,7 +50,7 @@ class Champion extends Component {
       <div id="champWrapper">
         <ChampionList champions={this.state.champions}/>
 
-        <ChampionCreate createChampion={this.createChampion}/>
+        <ChampionCreate createChampion={this.createChampion} />
 
       </div>
     );

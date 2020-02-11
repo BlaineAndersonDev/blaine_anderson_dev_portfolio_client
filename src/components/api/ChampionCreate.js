@@ -1,16 +1,38 @@
 import React, { Component } from 'react';
+import superagent from 'superagent'
 import './ChampionCreate.css';
+import ChampionPortrait from './ChampionPortrait.js';
 
 class ChampionCreate extends Component {
   constructor(props){
     super(props);
     this.state = {
+      portraits: [],
+      currentPortraitId: 1,
       name: '',
       gold: '',
       class: '',
       image: ''
     };
   }
+
+  componentDidMount() {
+    this.getChampionPortraits();
+    console.log(typeof(this.state.portraits))
+  };
+
+  // Retrieves all Champion Portraits from hosted server.
+  getChampionPortraits = () => {
+    // axios.get(`http://159.65.105.25:5001/api/champions`)
+    superagent.get(`http://localhost:5001/api/championportraits`)
+    .catch(err => {
+      console.warn(err);
+    })
+    .then(res => {
+      this.setState({ portraits: res.body.results });
+    })
+  };
+
 
   handleSubmit = async (event) => {
     const newChampion = {
@@ -38,11 +60,10 @@ class ChampionCreate extends Component {
 
   handleNameChange = async (event) => {
     await this.setState({name: event.target.value})
-  }
+  };
   handleClassChange = async (event) => {
     await this.setState({class: event.target.value})
-  }
-
+  };
 
 
   render() {
@@ -55,6 +76,23 @@ class ChampionCreate extends Component {
 
         <div id="champCreateList">
           <form className="champCreateFieldContainer" onSubmit={this.handleEmptyFields}>
+
+            <div id="championPortraitContainer">
+              { this.state.portraits.map((portrait, index) =>
+                <ChampionPortrait
+                  key={index}
+                  portrait={portrait}
+                  totalPortraits={this.state.portraits.length}
+                  decreasePortraitId={this.decreasePortraitId}
+                  increasePortraitId={this.increasePortraitId}
+                />
+              )}
+            </div>
+
+
+
+
+
 
             <div className="champCreateFieldTitle"> Name: </div>
             <input className="champCreateTextarea" type="text" value={this.state.name} onChange={this.handleNameChange} />
